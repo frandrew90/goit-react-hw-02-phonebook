@@ -1,0 +1,2 @@
+(this["webpackJsonpgoit-react-hw-02-phonebook"]=this["webpackJsonpgoit-react-hw-02-phonebook"]||[]).push([[0],{10:function(e,t,n){"use strict";n.r(t);n(1);var o=n(3),c=n.n(o),r=n(0),h=function(){return Object(r.jsx)(r.Fragment,{children:Object(r.jsx)("h1",{children:"Hello"})})};n(9);c.a.render(Object(r.jsx)(r.Fragment,{children:Object(r.jsx)(h,{})}),document.getElementById("root"))},9:function(e,t,n){}},[[10,1,2]]]);
+//# sourceMappingURL=main.48836409.chunk.js.map
