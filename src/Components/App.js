@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import ContactList from './contactList/ContactList';
 import ContactForm from './contatctForm/ContactForm';
 import Filter from './filter/Filter';
+import s from '../Components/App.module.css';
 
 class App extends Component {
   state = {
@@ -46,7 +47,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1>Phonebook</h1>
+        <h1 className={s.title}>Phonebook</h1>
 
         <ContactForm
           //   handleChange={this.handleChange}
@@ -54,7 +55,7 @@ class App extends Component {
           isThereContact={this.isThereContact}
         />
 
-        <h2>Contacts</h2>
+        <h2 className={s.title}>Contacts</h2>
 
         <Filter filter={this.state.filter} onChange={this.handleChange} />
 
