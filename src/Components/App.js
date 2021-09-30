@@ -42,7 +42,9 @@ class App extends Component {
   };
 
   isThereContact = name =>
-    this.state.contacts.some(contact => contact.name === name);
+    this.state.contacts.some(
+      contact => contact.name.toLowerCase() === name.toLowerCase(),
+    );
 
   render() {
     return (
