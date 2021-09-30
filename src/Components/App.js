@@ -62,7 +62,7 @@ class App extends Component {
         <Filter filter={this.state.filter} onChange={this.handleChange} />
 
         <ContactList
-          findContact={this.findContact}
+          findContact={this.findContact()}
           removeContact={this.removeContact}
         />
       </>

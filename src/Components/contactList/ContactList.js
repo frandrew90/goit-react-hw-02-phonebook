@@ -5,7 +5,7 @@ import s from './ContactList.module.css';
 const ContactList = ({ findContact, removeContact }) => {
   return (
     <ul>
-      {findContact().map(contact => {
+      {findContact.map(contact => {
         return (
           <li className={s.contactListItem} key={contact.id}>
             <span className={s.contactListName}>{contact.name}:</span>
@@ -29,6 +29,6 @@ const ContactList = ({ findContact, removeContact }) => {
 export default ContactList;
 
 ContactList.propTypes = {
-  findContact: PropTypes.func.isRequired,
+  findContact: PropTypes.array.isRequired,
   removeContact: PropTypes.func.isRequired,
 };
